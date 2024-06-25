@@ -399,3 +399,6 @@ color: var(--main-color);
         font-size: 1.2rem;
     }
 }
+h1{
+    padding-top: 8px;
+}
