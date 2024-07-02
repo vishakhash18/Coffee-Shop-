@@ -62,6 +62,11 @@ header.shadow{
     text-transform:uppercase;
     font-weight: 500;
 }
+/* @media(max-width: 768px){
+    h1{
+       text-wrap: normal;    
+    }
+} */
 .navbar a:hover{
     background : var(--main-color);
     border-radius : 0.2 rem;
@@ -116,7 +121,7 @@ header.shadow{
 .home{
     width:100%;
     min-height:100vh;
-    background: url(./bg.png);
+    background: url(images/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -130,7 +135,7 @@ header.shadow{
     color: var(--main-color);
     text-transform: uppercase;
     letter-spacing: 1px;
-
+    text-wrap: wrap;
 }
 .home-text p{
     font-size:0.938rem;
@@ -339,9 +344,6 @@ color: var(--main-color);
     }
 }
 @media(max-width: 768px){
-   header{
-    padding: 12px 4%;
-   }
   #menu-icon{
     display:initial;
   }
@@ -371,32 +373,29 @@ color: var(--main-color);
   .about{
     align-items:center;
   }
+  header{
+      padding: 11px 4%;
+  }
+  .logo img{
+      width: 45px;
+  }
+  .home-text{
+      padding-top: 15px;
+  }
+  .home-text h1{
+      font-size: 1.4rem;
+  }
+  .home-text p{
+      font-size: 0.8rem;
+      font-weight: 300;
+  }
+  .about-img{
+      order:2;
+  }
+  .about-text{
+      text-align:center;
+  }
+  .about-text h2{
+      font-size: 1.2rem;
+  }
 }
-@media(max-width: 360px){
-    header{
-        padding: 11px 4%;
-    }
-    .logo img{
-        width: 45px;
-    }
-    .home-text{
-        padding-top: 15px;
-    }
-    .home-text h1{
-        font-size: 1.4rem;
-    }
-    .home-text p{
-        font-size: 0.8rem;
-        font-weight: 300;
-    }
-    .about-img{
-        order:2;
-    }
-    .about-text{
-        text-align:center;
-    }
-    .about-text h2{
-        font-size: 1.2rem;
-    }
-}
-
